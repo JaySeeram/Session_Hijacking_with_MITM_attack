@@ -35,4 +35,8 @@ Here in place of `<routerip` and `<targetip>` you need to add the real IP addres
 > 1. `arpspoof` it is the command-line utility for ARP spoofing.
 > 2. `-t` specifies a target or victim IP address you want to intercept or manipulate.
 
+<div align="center">
+  
 ![ezgif com-video-to-gif-converter](https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/assets/162781155/7a923c7d-9a4c-45d6-b8f1-f8ca49649e46)
+
+</div>
