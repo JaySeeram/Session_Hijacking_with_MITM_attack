@@ -34,6 +34,15 @@ Here in place of `<routerip` and `<targetip>` you need to add the real IP addres
 > **Note** Let's see what this command does
 > 1. `arpspoof` it is the command-line utility for ARP spoofing.
 > 2. `-t` specifies a target or victim IP address you want to intercept or manipulate.
+****
+Now open a second terminal with root privileges and execute the following command
+```
+arpspoof -t <targetip> <routerip> 
+```
+****
+After executing the previous two commands, now we have to open wireshark, which is located under `Sniffing & Spoofing` section.
+- Now go to `Capture` ➜ `Options` ➜ select the interface `eth0` and press ➜ `Start`.
+- Write the filter `http.cookie` and press enter.
 
 <div align="center">
   
@@ -41,10 +50,11 @@ Here in place of `<routerip` and `<targetip>` you need to add the real IP addres
 
 </div>
 
-****
-Now open a second terminal with root privileges and execute the following command
-```
-arpspoof -t <targetip> <routerip> 
-```
-****
-
+- We will be using the website `altoromutual.com` for this demonstration.
+- If the user has already logged into the account, and refreshes the page due to some reason, wireshark will capture those packets and show it to you on the screen. We are able to see this packet because somewhere in this particular data cookie keyword is available.
+- No right click the packet ➜ `Follow` ➜ `HTTP Stream`.
+- Now whatever data that is available beside cookie is very important.
+- To perform the attack we first need to log into our account in `altoromutual.com`.
+- After we have logged into our account, right click and go to inspect. Remember that we are performing the attack while being on a Linux machine. So the browser we have used to log in to our account is firefox. And in firefox the cookie element is present under the `Storage` tab. Unlike in Chrome or MSEdge where the cookies are present under application, in Linux we have it under `Storage`.
+- Under cookies you will find your session token values, using which you have established a session. Any other person who has access to these tokens can impersonate you and make requests to the web server.
+- Similarly the victim must also be having these token values using which a session has been established betweeen his computer and the web server. But the victim does not know that we have captured his cookies with support of MITM attack. Now simply by replacing our session tokens with the victim's, we will easily gain access to his account.
