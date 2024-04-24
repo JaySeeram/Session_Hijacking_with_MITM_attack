@@ -58,3 +58,11 @@ After executing the previous two commands, now we have to open wireshark, which 
 - After we have logged into our account, right click and go to inspect. Remember that we are performing the attack while being on a Linux machine. So the browser we have used to log in to our account is firefox. And in firefox the cookie element is present under the `Storage` tab. Unlike in Chrome or MSEdge where the cookies are present under application, in Linux we have it under `Storage`.
 - Under cookies you will find your session token values, using which you have established a session. Any other person who has access to these tokens can impersonate you and make requests to the web server.
 - Similarly the victim must also be having these token values using which a session has been established betweeen his computer and the web server. But the victim does not know that we have captured his cookies with support of MITM attack. Now simply by replacing our session tokens with the victim's, we will easily gain access to his account.
+
+<p align="center">
+<b>Captured Packets</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/Packet%20Captured.gif" height="65%" width="65%"/>
+<br/>
+<br/>
+</p>
