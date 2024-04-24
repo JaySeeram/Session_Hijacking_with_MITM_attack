@@ -51,6 +51,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <br/>
 <br/>
 </p>
+
 - We will be using the website `altoromutual.com` for this demonstration.
 - If the user has already logged into the account, and refreshes the page due to some reason, wireshark will capture those packets and show it to you on the screen. We are able to see this packet because somewhere in this particular data cookie keyword is available.
 - No right click the packet ➜ `Follow` ➜ `HTTP Stream`.
