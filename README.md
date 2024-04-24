@@ -24,6 +24,15 @@ Now we need to enable IP forwarding on the linux machine. This can be done with 
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
+
+<p align="center">
+<b>Enabling IP Forwarding</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/IP%20Forwarding.gif" height="60%" width="60%"/>
+<br/>
+<br/>
+</p>
+
 > **Note** Here's what each part of the command does:
 > 1. `echo 1` this command simple outputs the number 1. But as we also spcified the redirection operator `>` it redirects the output of the command on the left-hand side to the file specified on its right hand side.
 > 2. `/proc/sys/net/ipv4/ip_forward` is the path to a file in the linux filesystem. And `/proc` is a virtual filesystem that provides access to kernel data structures and system information. Within `/proc/sys/net/ipv4/` there is a file called `ip_forward`. And this file controls whether IP forwarding is enabled or disabled.
