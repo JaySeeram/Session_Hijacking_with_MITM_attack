@@ -10,6 +10,15 @@ Let's open the Linux terminal in root user with the following command. It is imp
 ```
 sudo su
 ```
+
+<p align="center">
+<b>Root User</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Sudo%20Su.gif" height="65%" width="65%"/>
+<br/>
+<br/>
+</p>
+
 ****
 Now we need to enable IP forwarding on the linux machine. This can be done with the following command
 ```
