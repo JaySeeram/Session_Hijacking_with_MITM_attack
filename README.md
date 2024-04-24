@@ -62,7 +62,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Captured Packets</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/Packet%20Captured.gif" height="65%" width="65%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/Packet%20Captured.gif" height="70%" width="70%"/>
 <br/>
 <br/>
 </p>
