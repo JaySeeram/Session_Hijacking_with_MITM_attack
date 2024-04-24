@@ -15,10 +15,10 @@ Now we need to enable IP forwarding on the linux machine. This can be done with 
 ```
 echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
-Here's what each part of the command does:
-1. `echo 1` this command simple outputs the number 1. But as we also spcified the redirection operator `>` it redirects the output of the command on the left-hand side to the file specified on its right hand side.
-2. `/proc/sys/net/ipv4/ip_forward` is the path to a file in the linux filesystem. And `/proc` is a virtual filesystem that provides access to kernel data structures and system information. Within `/proc/sys/net/ipv4/` there is a file called `ip_forward`. And this file controls whether IP forwarding is enabled or disabled.
-3. This command sets the value of `/proc/sys/net/ipv4/ip_forward` to 1, which enables IP forwarding. IP forwarding is a feature that allows a linux system to act as a router by forwarding packets between network interfaces. When IP forwarding is enabled, the system will process incoming packets and decide whether to forward them to another network interface based on its routing table.
+> **Note** Here's what each part of the command does:
+> 1. `echo 1` this command simple outputs the number 1. But as we also spcified the redirection operator `>` it redirects the output of the command on the left-hand side to the file specified on its right hand side.
+> 2. `/proc/sys/net/ipv4/ip_forward` is the path to a file in the linux filesystem. And `/proc` is a virtual filesystem that provides access to kernel data structures and system information. Within `/proc/sys/net/ipv4/` there is a file called `ip_forward`. And this file controls whether IP forwarding is enabled or disabled.
+> 3. This command sets the value of `/proc/sys/net/ipv4/ip_forward` to 1, which enables IP forwarding. IP forwarding is a feature that allows a linux system to act as a router by forwarding packets between network interfaces. When IP forwarding is enabled, the system will process incoming packets and decide whether to forward them to another network interface based on its routing table.
 ****
 To know the router or gateway IP address execute this command.
 ```
@@ -44,12 +44,13 @@ After executing the previous two commands, now we have to open wireshark, which 
 - Now go to `Capture` ➜ `Options` ➜ select the interface `eth0` and press ➜ `Start`.
 - Write the filter `http.cookie` and press enter.
 
-<div align="center">
-  
-![ezgif com-video-to-gif-converter](https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/assets/162781155/7a923c7d-9a4c-45d6-b8f1-f8ca49649e46)
-
-</div>
-
+<p align="center">
+<b>Wireshark Filter</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Wireshark%20Filter.gif" height="60%" width="60%"/>
+<br/>
+<br/>
+</p>
 - We will be using the website `altoromutual.com` for this demonstration.
 - If the user has already logged into the account, and refreshes the page due to some reason, wireshark will capture those packets and show it to you on the screen. We are able to see this packet because somewhere in this particular data cookie keyword is available.
 - No right click the packet ➜ `Follow` ➜ `HTTP Stream`.
@@ -62,7 +63,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Captured Packets</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/Packet%20Captured.gif" height="70%" width="70%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Packets%20Captured.gif" height="65%" width="65%"/>
 <br/>
 <br/>
 </p>
