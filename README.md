@@ -14,7 +14,7 @@ sudo su
 <p align="center">
 <b>Root User</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Sudo%20Su.gif" height="50%" width="50%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Sudo%20Su.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
