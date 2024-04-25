@@ -14,7 +14,7 @@ sudo su
 <p align="center">
 <b>Root User</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Sudo%20Su.gif" height="65%" width="65%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Sudo%20Su.gif" height="50%" width="50%"/>
 <br/>
 <br/>
 </p>
@@ -28,7 +28,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 <p align="center">
 <b>Enabling IP Forwarding</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/IP%20Forwarding.gif" height="60%" width="60%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/IP%20Forwarding.gif" height="35%" width="35%"/>
 <br/>
 <br/>
 </p>
@@ -48,6 +48,15 @@ Now we use a technique called ARP spoofing. This technique is used to intercept 
 ```
 arpspoof -t <routerip> <targetip>
 ```
+
+<p align="center">
+<b>Arpspoof 01</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2001.gif" height="50%" width="50%"/>
+<br/>
+<br/>
+</p>
+
 Here in place of `<routerip` and `<targetip>` you need to add the real IP address. Once you have your target's IP address we can proceed with the next step.
 > **Note** Let's see what this command does
 > 1. `arpspoof` it is the command-line utility for ARP spoofing.
@@ -57,6 +66,15 @@ Now open a second terminal with root privileges and execute the following comman
 ```
 arpspoof -t <targetip> <routerip> 
 ```
+
+<p align="center">
+<b>Arpspoof 02</b>
+<br/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2002.gif" height="50%" width="50%"/>
+<br/>
+<br/>
+</p>
+
 ****
 After executing the previous two commands, now we have to open wireshark, which is located under `Sniffing & Spoofing` section.
 - Now go to `Capture` ➜ `Options` ➜ select the interface `eth0` and press ➜ `Start`.
@@ -65,7 +83,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Wireshark Filter</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Wireshark%20Filter.gif" height="60%" width="60%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Wireshark%20Filter.gif" height="50%" width="50%"/>
 <br/>
 <br/>
 </p>
@@ -82,7 +100,14 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Captured Packets</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Packets%20Captured.gif" height="65%" width="65%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Packets%20Captured.gif" height="50%" width="50%"/>
 <br/>
 <br/>
 </p>
+
+
+<blockquote cite="https://www.huxley.net/bnw/four.html">
+  <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+  <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+</blockquote>
+
