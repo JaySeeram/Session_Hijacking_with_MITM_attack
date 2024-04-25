@@ -28,7 +28,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 <p align="center">
 <b>Enabling IP Forwarding</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/IP%20Forwarding.gif" height="35%" width="35%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/IP%20Forwarding.gif" height="30%" width="30%"/>
 <br/>
 <br/>
 </p>
@@ -120,12 +120,13 @@ After executing the previous two commands, now we have to open wireshark, which 
 - Similarly the victim must also be having these token values using which a session has been established betweeen his computer and the web server. But the victim does not know that we have captured his cookies with support of MITM attack. Now simply by replacing our session tokens with the victim's, we will easily gain access to his account.
 
 <p align="center">
-<b>Captured Packets</b>
+<b>Login Attempt</b>
 <br/>
   <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Login%20Attempt.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
 
+- We have successfly logged into the victims account without knowing his username or password. This is how dangerous this attack is. However this works only on http sites. Because https are way more secure and the packets are encrypted.
 ****
 
