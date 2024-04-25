@@ -52,7 +52,7 @@ arpspoof -t <routerip> <targetip>
 <p align="center">
 <b>Arpspoof 01</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2001.gif" height="50%" width="50%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2001.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
@@ -70,7 +70,7 @@ arpspoof -t <targetip> <routerip>
 <p align="center">
 <b>Arpspoof 02</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2002.gif" height="50%" width="50%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Arpspoof%2002.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
@@ -83,7 +83,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Wireshark Filter</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Wireshark%20Filter.gif" height="50%" width="50%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Wireshark%20Filter.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
@@ -100,7 +100,7 @@ After executing the previous two commands, now we have to open wireshark, which 
 <p align="center">
 <b>Captured Packets</b>
 <br/>
-  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Packets%20Captured.gif" height="50%" width="50%"/>
+  <img src="https://github.com/JaySeeram/Session_Hijacking_with_MITM_attack/blob/main/GIFs/Packets%20Captured.gif" height="40%" width="40%"/>
 <br/>
 <br/>
 </p>
